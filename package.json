@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "npx @cloudflare/next-on-pages deploy .vercel/output/static",
-    "postbuild": "npx @cloudflare/next-on-pages"
+    "deploy": "npx @cloudflare/next-on-pages deploy .vercel/output/static"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
