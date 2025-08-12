@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "deploy": "npx @cloudflare/next-on-pages deploy .vercel/output/static",
+    "postbuild": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -68,5 +68,7 @@
     "vaul": "^0.9.9",
     "zod": "^3.23.8"
   },
-  "packageManager": "pnpm@8.0.0"
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.13"
+  }
 }
